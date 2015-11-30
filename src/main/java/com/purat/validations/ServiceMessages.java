@@ -9,7 +9,7 @@ import java.util.List;
  * Created by compurat on 5-5-15.
  */
 @Component
- class ServiceMessages<T>  {
+ public class ServiceMessages<T>  {
 
     private T bean;
     private List<String> errorMessages = new ArrayList<String>();
