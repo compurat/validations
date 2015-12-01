@@ -11,22 +11,13 @@ import java.util.List;
 @Component
  public class ServiceMessages<T>  {
 
-    private T bean;
     private List<String> errorMessages = new ArrayList<String>();
-     T getMessageInputBean() {
-        return bean;
-    }
-
-    void setMessageInputBean(T bean) {
-        this.bean = bean;
-    }
-
 
     public List<String> getErrorMessages() {
         return errorMessages;
     }
 
-     void addErrorMessages(String errorMessages) {
+    public void addErrorMessages(String errorMessages) {
         this.errorMessages.add(errorMessages);
     }
 

@@ -30,7 +30,6 @@ import java.util.Set;
             ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
             javax.validation.Validator validator = factory.getValidator();
             errorMessages = validator.validate(bean);
-            messages.setMessageInputBean(bean);
             boolean verified = errorMessages.size()==0;
             return  verified;
 
